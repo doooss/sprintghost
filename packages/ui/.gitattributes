@@ -1,0 +1,11 @@
+# Treat snapshot images as binary files
+__snapshots__/**/*.png binary
+__snapshots__/**/*.jpg binary
+__snapshots__/**/*.jpeg binary
+
+# Ensure consistent line endings for text files
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf

@@ -1,0 +1,3 @@
+/* @repo/tailwind-config/base.css를 re-export */
+/* Storybook 및 독립 실행용 */
+@import "@repo/tailwind-config/base.css";

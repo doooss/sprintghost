@@ -1,0 +1,4 @@
+@import "@repo/tailwind-config/base.css";
+
+/* App-specific source paths */
+@source "../../../src/**/*.tsx";
