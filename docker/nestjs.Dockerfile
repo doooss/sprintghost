@@ -46,9 +46,15 @@ COPY --from=builder /app/deploy ./
 # Copy built dist
 COPY --from=builder /app/services/api/dist ./dist
 
+# Copy drizzle migrations
+COPY --from=builder /app/services/api/drizzle ./drizzle
+
 # Copy built @repo/types
 COPY --from=builder /app/packages/types/dist ./node_modules/@repo/types/dist
 COPY --from=builder /app/packages/types/package.json ./node_modules/@repo/types/
+
+# Copy entrypoint script
+COPY docker/entrypoint.sh /app/entrypoint.sh
 
 # Create data directory for SQLite
 RUN mkdir -p /app/data && chown -R nestjs:nodejs /app/data
@@ -58,4 +64,5 @@ USER nestjs
 EXPOSE 3000
 ENV PORT=3000
 
+ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["node", "dist/main.js"]

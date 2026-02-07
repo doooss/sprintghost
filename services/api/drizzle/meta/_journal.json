@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1770361199472,
+      "tag": "0000_yummy_metal_master",
+      "breakpoints": true
+    }
+  ]
+}
