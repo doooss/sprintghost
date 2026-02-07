@@ -40,8 +40,8 @@ const LOW_PRIORITY_PATTERNS = [
 
 // 기본 모델
 const DEFAULT_MODELS: Record<AIProvider, string> = {
-  openai: 'gpt-5.2',
-  anthropic: 'claude-opus-4-5',
+  openai: 'gpt-5.3',
+  anthropic: 'claude-sonnet-4-5-20250929',
   google: 'gemini-3-pro',
 };
 

@@ -17,9 +17,9 @@ import { useAiValidation } from '@/hooks';
 import type { WizardData } from '../project-wizard';
 
 const AI_PROVIDERS = [
-  { value: 'openai', label: 'OpenAI', models: ['gpt-4o', 'gpt-4o-mini', 'gpt-4-turbo'] },
-  { value: 'anthropic', label: 'Anthropic', models: ['claude-sonnet-4-20250514', 'claude-3-5-haiku-20241022'] },
-  { value: 'google', label: 'Google', models: ['gemini-1.5-pro', 'gemini-1.5-flash'] },
+  { value: 'openai', label: 'OpenAI', models: ['gpt-5.3', 'gpt-5.2', 'gpt-4o'] },
+  { value: 'anthropic', label: 'Anthropic', models: ['claude-opus-4-6', 'claude-sonnet-4-5-20250929', 'claude-haiku-4-5-20251001'] },
+  { value: 'google', label: 'Google', models: ['gemini-3-pro', 'gemini-3-flash'] },
 ] as const;
 
 interface StepAIProps {
